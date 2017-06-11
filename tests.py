@@ -11,11 +11,11 @@ class TestKeywordExtractor(unittest.TestCase):
         self.project_path = get_module_path(__file__)
         self.KE1 = KeyphraseExtractor(
             self.project_path,
-            True,
+            1,
             23)
         self.KE2 = KeyphraseExtractor(
             self.project_path,
-            False,
+            0,
             12)
 
     def test_with_use_cluster(self):

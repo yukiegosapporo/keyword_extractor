@@ -92,11 +92,13 @@ class KeyphraseExtractor(object):
 
     def get_phrase_scores(self):
         logger.info("Getting phrases and their scores")
-        if self.use_cluster==True:
+        if int(self.use_cluster)==1:
             self.get_clustered_phrase_list()
             data = self.clustered_phrase_list
+            logger.info("Using clustered phrase list as an input")
         else:
             data = self.phrase_list
+            logger.info("Using raw phrase list as an input")
         res = defaultdict(list)
         for i, phrases in enumerate(data):
             logger.debug("Phrases in document {}".format(i + 1))

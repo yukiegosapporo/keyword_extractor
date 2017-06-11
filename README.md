@@ -37,6 +37,7 @@ better keyword extraction.
 **Top 10 important phrases with clustering**
 
 Key phrases | TF-IDF score
+---------------------|--------
 mcdonald     |  0.038400000000000004
 mcdonald 's  |  0.033299999999999996
 york         |  0.0308

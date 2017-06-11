@@ -37,32 +37,31 @@ better keyword extraction.
 **Top 10 important phrases with clustering**
 
 Key phrases | TF-IDF score
----------------------|--------
-street               |  1.201
-cooking              |  1.1537
-concessionsedit      |  1.1392
-something            |  1.1392
-brazil               |  1.1392
-nutritional content  |  1.1392
-kaifeng              |  1.1222
-street vendors       |  1.1117
-home-cooking         |  1.0459
-commercial cooking   |  1.0459
+mcdonald     |  0.038400000000000004
+mcdonald 's  |  0.033299999999999996
+york         |  0.0308
+press        |  0.0305
+obesity      |  0.029099999999999997
+new york     |  0.0277
+fast         |  0.0268
+sugar        |  0.026099999999999998
+company      |  0.0256
+study        |  0.0255
 
 **Top 10 important phrases without clustering**
 
 Key phrases | TF-IDF score
 ---------------------|--------
-hcas             |  0.0449
-cancer           |  0.0426
-something        |  0.0367
-risk             |  0.0349
-vitamin          |  0.0266
-restaurant       |  0.0244
-petrol           |  0.0237
-petrol stations  |  0.0237
-west             |  0.0237
-beef             |  0.0226
+international food imports  |  1.961
+dietary problems            |  1.961
+nutrition                   |  1.635
+food                        |  1.6154
+cooking                     |  1.6096
+%                           |  1.4789
+street                      |  1.4233
+something                   |  1.3397
+taste                       |  1.3393
+kaifeng                     |  1.3100999999999998
 
 ## Tests
 `python3 tests.py`
@@ -71,4 +70,5 @@ beef             |  0.0226
 
 - Add more tests
 - Compare clustering algorithms
-- More data clearning (to exclude words like `%`)
+- More data clearning (to exclude words like **%** and combine **mcdonald**
+and **mcdonald 's**)
